@@ -1,5 +1,5 @@
 window.onload = function () {
-  var fileInput = document.getElementById("fileInput");
+  var fileInput = document.getElementById("day01Input");
   var fileDisplayArea = document.getElementById("fileDisplayArea");
 
   fileInput.addEventListener("change", function (e) {
