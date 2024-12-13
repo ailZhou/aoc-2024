@@ -179,12 +179,12 @@ function transverse(point, fences, sides) {
   } else {
     const side = [];
     if (point.dir === "up" || point.dir === "down") {
-      //go left or right
+      //up/down means going left or right
       const left = findEnds(point, [], fences, { x: -1, y: 0 });
       const right = findEnds(point, [], fences, { x: 1, y: 0 });
       side.push(...left, ...right);
     } else if (point.dir === "right" || point.dir === "left") {
-      //right means going up or down
+      //right/left means going up or down
       const up = findEnds(point, [], fences, { x: 0, y: -1 });
       const down = findEnds(point, [], fences, { x: 0, y: 1 });
       side.push(...up, ...down);
