@@ -207,7 +207,6 @@ function part2(map) {
   const regionsList = buildRegionList(map);
 
   for (var i = 0; i < regionsList.length; i++) {
-    console.log(regionsList[i]);
     //remove any plots that have plants around them
     const edges = regionsList[i].region.filter(
       (plot) => !(plot.nextPlant.length == 4)
