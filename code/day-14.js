@@ -9,7 +9,6 @@ window.onload = function () {
       var reader = new FileReader();
 
       reader.onload = function (e) {
-        console.log(reader.result.toString().replace(/\n/g, "|"));
         const data = parse(reader.result.toString());
         part1(structuredClone(data));
         part2(structuredClone(data));
@@ -157,10 +156,3 @@ function plot(robots, index) {
     console.log(drawMap);
   }
 }
-
-function run() {
-  const data = parse2(testData);
-  part2(structuredClone(data));
-}
-
-run()
