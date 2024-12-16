@@ -42,10 +42,6 @@ function parse(data) {
     .map((item) => Array.from(item));
 }
 
-function onlyUnique(value, index, array) {
-  return array.indexOf(value) === index;
-}
-
 function run(data, unique) {
   const formatted = data
     .map((col, y) =>

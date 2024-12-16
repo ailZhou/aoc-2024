@@ -22,10 +22,6 @@ window.onload = function () {
   });
 };
 
-function onlyUnique(value, index, array) {
-  return array.indexOf(value) === index;
-}
-
 const plantDisplacement = [
   { x: 0, y: -1, dir: "up" },
   { x: -1, y: 0, dir: "left" },

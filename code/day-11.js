@@ -71,10 +71,6 @@ function arrangment(data, blinks) {
   return arrangment(data.map((item) => rules(item)).flat(), blinks - 1);
 }
 
-function onlyUnique(value, index, array) {
-  return array.indexOf(value) === index;
-}
-
 const lookup = new Map();
 const expandedList = new Map();
 const expandedListTotal = new Map();
